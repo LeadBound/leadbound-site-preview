@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LeadBound | אאוטבאונד B2B בלינקדאין ובמייל, עד פגישה ביומן</title>
+<meta name="description" content="אאוטבאונד B2B בשירות מלא, בלינקדאין ובמייל. מהנדסי AI בונים את המערכת ואנשי אאוטריץ' ותיקים מריצים אותה, מההודעה הראשונה ועד פגישה שנקבעת לכם ביומן.">
+<meta name="theme-color" content="#F0F2EE">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/apple-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>
+  document.documentElement.classList.add('js');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('rm');
+  window.LB_CONFIG = { bookingEndpoint: '', strategyEndpoint: '' };
+</script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+
+<canvas id="stage" aria-hidden="true"></canvas>
+
+<header class="site-head" id="siteHead">
+  <div class="wrap head-row">
+    <a class="brand" href="#top" aria-label="LeadBound, לראש העמוד">
+      <img src="../../assets/logo-black.png" alt="LeadBound" width="1116" height="185">
+    </a>
+    <nav class="nav" id="nav" aria-label="ניווט ראשי">
+      <ul>
+        <li><a href="#method">איך זה עובד</a></li>
+        <li><a href="#replies">תגובות</a></li>
+        <li><a href="#clients">לקוחות</a></li>
+        <li><a href="#offers">מסלולים</a></li>
+        <li><a href="#faq">שאלות</a></li>
+        <li><a href="https://the-leadbound.com/" lang="en" hreflang="en">EN</a></li>
+      </ul>
+    </nav>
+    <div class="head-act">
+      <button type="button" class="btn btn-ink btn-sm" data-book>קבעו שיחה</button>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="תפריט">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top" aria-labelledby="hero-h1">
+  <svg class="hero-far" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+    <circle r="84" /><circle r="70" /><circle r="56" /><circle r="40" /><circle r="22" />
+    <path d="M -76.7 -57.8 A 96 96 0 0 1 76.7 -57.8 M 76.7 57.8 A 96 96 0 0 1 -76.7 57.8" class="arcs"/>
+  </svg>
+  <div class="wrap hero-grid">
+    <p class="micro hero-micro" dir="ltr" lang="en">LEADBOUND · B2B OUTBOUND · EMAIL + LINKEDIN</p>
+    <p class="mega" dir="ltr" lang="en"><span class="mega-l">HIT THE</span> <span class="mega-l">RIGHT</span> <span class="mega-l"><span class="acc">INBOX</span>.</span></p>
+    <div class="anchor anchor-hero" data-anchor="hero" data-pose="6 -24 0" aria-hidden="true"></div>
+    <div class="anchor-bow" id="bowAnchor" aria-hidden="true"></div>
+    <hr class="hero-rule">
+    <div class="hero-copy">
+      <h1 id="hero-h1">סיגנלים מהשוק.<br>פגישות <span class="acc">ביומן</span>.</h1>
+      <p class="lead">אאוטבאונד B2B במייל ובלינקדאין. אנחנו מאתרים חברות שמראות עכשיו סימן שהן צריכות אתכם, ומביאים לכם פגישה עם מי שמחליט.</p>
+    </div>
+    <div class="hero-act">
+      <button type="button" class="btn btn-ink" data-book>קבעו שיחה</button>
+      <p class="under">ב-30 דקות שיחה נראה לכם איך זה יעבוד אצלכם.</p>
+      <a class="link-arrow" href="#strategy">או אסטרטגיה חינם, במייל תוך שעה</a>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients" id="clients" aria-labelledby="clients-h">
+  <div class="wrap">
+    <h2 class="label-h" id="clients-h">בין הלקוחות שלנו</h2>
+    <ul class="logos">
+      <li><img src="../../assets/clients/agentic-dark.svg" alt="Agentic-Dev" width="502" height="110" loading="lazy"></li>
+      <li><img src="../../assets/clients/controla.webp" alt="Controla" width="480" height="95" loading="lazy"></li>
+      <li><img src="../../assets/clients/achzakal.webp" alt="אחזקל" width="480" height="137" loading="lazy"></li>
+      <li><img src="../../assets/clients/deeplan.webp" alt="DeePlan" width="480" height="115" loading="lazy"></li>
+      <li class="logo-tall"><img src="../../assets/clients/falconies.webp" alt="Falconies" width="480" height="353" loading="lazy"></li>
+      <li class="logo-tall"><img src="../../assets/clients/star.webp" alt="STAR" width="480" height="480" loading="lazy"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="method" id="method" aria-labelledby="method-h">
+  <div class="wrap method-head">
+    <h2 class="display" id="method-h">חמישה שלבים.<br>פגישה <span class="acc">אחת</span>.</h2>
+    <p class="intro">רוב הפניות היזומות יוצאות לכולם, ולכן כמעט אף אחד לא עונה. אנחנו מתחילים מהשוק כולו ומסננים, עד שנשארות רק החברות שצריכות אתכם עכשיו.</p>
+  </div>
+  <div class="method-pin" id="methodPin">
+    <div class="wrap method-grid">
+      <div class="method-visual">
+        <div class="anchor anchor-method" data-anchor="method" data-pose="4 -16 0" aria-hidden="true"></div>
+      </div>
+      <div class="stages">
+        <div class="rail" aria-hidden="true">
+          <span class="rail-i" data-i="1"><b class="mono">01</b>סיגנל</span>
+          <span class="rail-i" data-i="2"><b class="mono">02</b>אימות</span>
+          <span class="rail-i" data-i="3"><b class="mono">03</b>מסר</span>
+          <span class="rail-i" data-i="4"><b class="mono">04</b>תגובה</span>
+          <span class="rail-i" data-i="5"><b class="mono">05</b>פגישה</span>
+        </div>
+        <ol class="stage-list">
+          <li class="stage is-active" data-stage="1">
+            <p class="stage-label"><span class="mono">01</span> סיגנל</p>
+            <h3>קודם כל, סיבה טובה לפנות.</h3>
+            <p>גיוס עובדים, סבב השקעה, השקת מוצר, כניסה לשוק חדש. כל פנייה שלנו מתחילה מסימן אמיתי לכך שעכשיו זה הזמן.</p>
+          </li>
+          <li class="stage" data-stage="2">
+            <p class="stage-label"><span class="mono">02</span> אימות</p>
+            <h3>רק מי שמחליט. רק כתובות שמגיעות לתיבה.</h3>
+            <p>כל איש קשר עובר 5 שלבי אימות לפני שיוצאת אליו הודעה אחת. בלי כתובות כלליות ובלי ניחושים.</p>
+            <p class="stat"><b>פחות מ-2%</b><span lang="en">Bounce</span></p>
+          </li>
+          <li class="stage" data-stage="3">
+            <p class="stage-label"><span class="mono">03</span> מסר</p>
+            <h3>הודעה שנכתבה לאדם אחד, בשני ערוצים.</h3>
+            <p>מייל ולינקדאין במקביל ובתיאום. הקופי נבנה סביב הסיגנל, ואתם מאשרים אותו לפני שהוא יוצא.</p>
+            <div class="stat-row">
+              <p class="stat"><b>8%</b><span>תגובה ממוצעת במייל</span></p>
+              <p class="stat"><b>37%</b><span>תגובה ממוצעת בלינקדאין</span></p>
+            </div>
+          </li>
+          <li class="stage" data-stage="4">
+            <p class="stage-label"><span class="mono">04</span> תגובה</p>
+            <h3>כל תשובה מטופלת תוך פחות מ-30 דקות.</h3>
+            <p>SDR אנושי עונה, מסנן את מי שלא מתאים וקובע עם מי שכן. אתם מקבלים התראה ברגע שליד חם נכנס.</p>
+            <p class="stat"><b>פחות מ-30 דק'</b><span>זמן מענה ממוצע</span></p>
+          </li>
+          <li class="stage stage-final" data-stage="5">
+            <p class="stage-label"><span class="mono">05</span> פגישה</p>
+            <h3>פגישה ביומן <span class="acc">שלכם</span>.</h3>
+            <p>הכל מסונכרן ל-HubSpot, Salesforce, Pipedrive או Monday: כל הודעה, כל תגובה וכל פגישה, אצלכם ב-CRM ובזמן אמת.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCALE LINE -->
+<section class="scale" aria-label="היקף">
+  <div class="wrap">
+    <p class="scale-line"><strong>יותר מ-250,000 הודעות בחודש, בכל <span class="acc">העולם</span>.</strong> <span class="scale-tail">ככה אנחנו יודעים מה עובד.</span></p>
+  </div>
+</section>
+
+<!-- REPLIES -->
+<section class="replies" id="replies" aria-labelledby="replies-h">
+  <div class="wrap">
+    <div class="replies-head">
+      <div>
+        <h2 class="display" id="replies-h">ככה עונים <span class="acc">לנו</span>.</h2>
+        <p class="sub">תגובות אמיתיות לקמפיינים שהרצנו ללקוחות. כמו שהגיעו, באנגלית, בלי שם הכותב.</p>
+      </div>
+      <div class="anchor anchor-replies" data-anchor="replies" data-pose="8 26 -6" aria-hidden="true"></div>
+    </div>
+    <ul class="board">
+      <li class="note" style="--r:-1.6deg"><p class="note-tag">ביקשו פגישה</p><blockquote lang="en" dir="ltr"><p>Love the determination. I'd love to hop on a quick Google Meet call tomorrow if that works for you. Have a great day!</p></blockquote></li>
+      <li class="note" style="--r:1.2deg"><p class="note-tag">ביקשו שיחת היכרות</p><blockquote lang="en" dir="ltr"><p>Hi Ben, How are you? You fit in quite well with quite a few emails we receive every week on the same subject. I would love to schedule an introductory call to understand the relevance for us. I would appreciate receiving some background material about you before the call. Thanks,</p></blockquote></li>
+      <li class="note" style="--r:-0.8deg"><p class="note-tag">פגענו בתזמון</p><blockquote lang="en" dir="ltr"><p>Amazing outreach. You hit the nail on the head with what we are doing right now.</p></blockquote></li>
+      <li class="note" style="--r:1.8deg"><p class="note-tag">שאלו איך עובדים יחד</p><blockquote lang="en" dir="ltr"><p>Great outreach Noam :) I'm already doing email outbound... How would you suggest we work together?</p></blockquote></li>
+      <li class="note" style="--r:-1.3deg"><p class="note-tag">הציעו לדבר</p><blockquote lang="en" dir="ltr"><p>Hey Ben, you are doing amazing outbound. Take a moment to look deeply at what we are doing, I am always of the approach of collaborations, especially during this crazy period. Update if you would still like to talk. As far as I'm concerned, gladly.</p></blockquote></li>
+      <li class="note" style="--r:0.9deg"><p class="note-tag">רצו לשמוע עוד</p><blockquote lang="en" dir="ltr"><p>Great outreach. Just because you reached my inbox, I'd love to hear ;)</p></blockquote></li>
+      <li class="note note-wide" style="--r:-0.6deg"><p class="note-tag">אמרו לא. ושאלו איך עשינו את זה.</p><blockquote lang="en" dir="ltr"><p>Hi Oren, While I'm not interested in your services, I do appreciate your cold mailing campaign. Could you explain how you set this up? I'm trying to implement something similar myself.</p></blockquote></li>
+    </ul>
+    <div class="replies-cta">
+      <p class="ask">רוצים שככה יענו גם <span class="acc">לכם</span>?</p>
+      <button type="button" class="btn btn-ink" data-book>קבעו שיחה</button>
+    </div>
+  </div>
+</section>
+
+<!-- CASE -->
+<section class="case" id="case" aria-labelledby="case-h">
+  <div class="wrap case-grid">
+    <h2 class="sr-only" id="case-h">סיפור הצלחה</h2>
+    <figure class="case-quote">
+      <blockquote>
+        <p>מדהימים! אנחנו עובדים איתכם כבר מספר חודשים ואנחנו מקבלים לידים מאוד איכותיים וטובים, שווה את הכסף! מעבר לזה שהם אנשים טובים וכנים! ממליץ בחום!</p>
+      </blockquote>
+      <figcaption>
+        <img src="../../assets/case/elad.webp" alt="אלעד א." width="192" height="192" loading="lazy">
+        <span><b>אלעד א.</b><span>מייסד-שותף ומנכ״ל, Agentic-Dev</span></span>
+      </figcaption>
+    </figure>
+    <dl class="case-nums">
+      <div><dt>פגישות שנקבעו ב-60 יום</dt><dd><bdi dir="ltr" data-count="17" data-fmt="int">17</bdi></dd></div>
+      <div><dt>צמיחה בפייפליין</dt><dd><bdi dir="ltr" data-count="3.2" data-fmt="x">×3.2</bdi></dd></div>
+      <div><dt>פייפליין פעיל מאאוטריץ'</dt><dd><bdi dir="ltr" data-count="75" data-fmt="k">$75K+</bdi></dd></div>
+    </dl>
+    <a class="link-arrow case-link" href="https://the-leadbound.com/he/case-studies">לכל סיפורי ההצלחה</a>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team" aria-labelledby="team-h">
+  <div class="wrap">
+    <div class="team-head">
+      <h2 class="display" id="team-h">האנשים מאחורי <span class="acc">המערכת</span>.</h2>
+      <p class="sub">שני מייסדים שמנהלים כל חשבון מקצה לקצה: אסטרטגיה, טכנולוגיה ומכירות.</p>
+    </div>
+    <div class="founders">
+      <article class="founder">
+        <div class="portrait"><img src="../../assets/team/noam.webp" alt="נעם סול" width="480" height="720" loading="lazy"></div>
+        <div class="founder-text">
+          <p class="micro" lang="en">Co-Founder</p>
+          <h3>נעם סול</h3>
+          <p>אחראי על האסטרטגיה והקמפיינים. מוביל את התכנון, הביצוע והאופטימיזציה של כל תוכניות האאוטריץ' של הלקוחות.</p>
+          <a class="link-arrow" href="https://www.linkedin.com/in/noamsol/" rel="noopener" target="_blank">LinkedIn</a>
+        </div>
+      </article>
+      <article class="founder">
+        <div class="portrait"><img src="../../assets/team/niv.webp" alt="ניב אלטמרק" width="402" height="720" loading="lazy"></div>
+        <div class="founder-text">
+          <p class="micro" lang="en">Co-Founder</p>
+          <h3>ניב אלטמרק</h3>
+          <p>אחראי על הטכנולוגיה. בונה את מנועי הסקרייפינג, האוטומציות, מערכת ה-CRM הפנימית והתשתיות מבוססות ה-AI שמאחורי הפעילות.</p>
+          <a class="link-arrow" href="https://www.linkedin.com/in/niv-altmark-aa0911285/" rel="noopener" target="_blank">LinkedIn</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FIT -->
+<section class="fit" id="fit" aria-labelledby="fit-h">
+  <div class="wrap">
+    <div class="fit-head">
+      <h2 class="display" id="fit-h">למי זה <span class="acc">מתאים</span>?</h2>
+      <p class="sub">אאוטריץ' עובד רק כשיש בסיס מסודר. ככה נדע מראש אם נוכל להביא לכם תוצאות.</p>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-col fit-yes">
+        <h3>מתאים אם:</h3>
+        <ul>
+          <li>אתם חברת B2B, סטארטאפ או סוכנות שנותנת שירותים</li>
+          <li>עסקה ממוצעת אצלכם שווה 5,000$ ומעלה</li>
+          <li>ה-ICP שלכם ברור: אתם יודעים מי הלקוח האידיאלי</li>
+          <li>יש אצלכם מי שיקלוט פגישות מכירה חדשות באופן קבוע</li>
+        </ul>
+      </div>
+      <div class="fit-col fit-no">
+        <h3>פחות מתאים אם:</h3>
+        <ul>
+          <li>אתם מוכרים מוצר זול לצרכן הסופי (E-commerce או B2C)</li>
+          <li>אתם מחפשים פתרון לחודש-חודשיים, בלי לבנות מנוע לטווח ארוך</li>
+          <li>עדיין אין מוצר מגובש או Product-Market Fit</li>
+          <li>אין מי שיטפל בלידים ובפגישות שנביא</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps" id="steps" aria-labelledby="steps-h">
+  <div class="wrap">
+    <h2 class="display steps-h" id="steps-h">מהשיחה הראשונה ועד הפגישה <span class="acc">הראשונה</span>.</h2>
+    <div class="timeline">
+      <div class="tl-line" aria-hidden="true"><span></span></div>
+      <ol>
+        <li><p class="when">לפני היציאה לדרך</p><h3>שיחת היכרות</h3><p>ממפים את ה-ICP ובודקים התאמה</p></li>
+        <li><p class="when">שבועות 1-2</p><h3>בניית התשתית</h3><p>תשתית שליחה שנבנית תחת המותג שלכם</p></li>
+        <li><p class="when">שבועות 3-4</p><h3>הקמפיינים הראשונים</h3><p>בודקים כמה קונספטים במקביל</p></li>
+        <li><p class="when">מחודש 2</p><h3>ניהול שוטף</h3><p>מכפילים את מה שעובד</p></li>
+        <li><p class="when">ממשיכים</p><h3>אופטימיזציה ודוחות</h3><p>בדיקות A/B וחידוד כל הזמן</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="offers" id="offers" aria-labelledby="offers-h">
+  <div class="wrap">
+    <div class="offers-head">
+      <h2 class="display" id="offers-h">שלוש דרכים לעבוד <span class="acc">איתנו</span>.</h2>
+      <p class="sub">בחרו כמה מעורבות אתם רוצים. המסלול שתבחרו יחכה לכם בטופס.</p>
+    </div>
+    <div class="offer-tabs" role="tablist" aria-label="מסלולים">
+      <button type="button" role="tab" id="tab-dfy" aria-controls="panel-dfy" aria-selected="true" data-route="Done For You"><span class="t-name" lang="en">Done For You</span><span class="t-tag">ניהול מלא, עד פגישה ביומן</span></button>
+      <button type="button" role="tab" id="tab-dwy" aria-controls="panel-dwy" aria-selected="false" tabindex="-1" data-route="Done With You"><span class="t-name" lang="en">Done With You</span><span class="t-tag">אנחנו בונים, אתם מריצים</span></button>
+      <button type="button" role="tab" id="tab-inf" aria-controls="panel-inf" aria-selected="false" tabindex="-1" data-route="Infrastructure"><span class="t-name" lang="en">Infrastructure</span><span class="t-tag">התשתית עלינו, השליחה עליכם</span></button>
+    </div>
+    <div class="offer-panels">
+      <div class="offer-panel" role="tabpanel" id="panel-dfy" aria-labelledby="tab-dfy" tabindex="0">
+        <div class="op-main">
+          <p class="op-lead">אנחנו בונים, מפעילים ומתחזקים את כל מערכת האאוטריץ': מהאסטרטגיה, דרך התשתית הטכנית, ועד הפגישה שמופיעה ביומן שלכם.</p>
+          <p class="op-fit"><b>מתאים במיוחד ל:</b> מייסדים וצוותי מכירות שרוצים פייפליין קבוע בלי להתעסק בתפעול.</p>
+          <button type="button" class="btn btn-ink" data-book data-route="Done For You">קבעו שיחה</button>
+        </div>
+        <ul class="op-list">
+          <li>תשתית אאוטריץ' מלאה, הקמה וניהול שוטף</li>
+          <li>אסטרטגיה וכמה קונספטים של קמפיינים, מפולחים ונבדקים</li>
+          <li>תוכן אישי לכל פרוספקט (AI, ואישור שלכם)</li>
+          <li>רשימות לידים מאומתות</li>
+          <li>ניהול SDR מהתגובה הראשונה ועד הפגישה</li>
+          <li>דשבורד חי לשקיפות מלאה</li>
+        </ul>
+      </div>
+      <div class="offer-panel" role="tabpanel" id="panel-dwy" aria-labelledby="tab-dwy" tabindex="0" hidden>
+        <div class="op-main">
+          <p class="op-lead">אנחנו מקימים אצלכם את התשתית, מגדירים אסטרטגיה ומכשירים את הצוות שלכם להריץ את המערכת. מהרגע שהיא באוויר, הצוות שלכם בהגה ואנחנו ברקע.</p>
+          <p class="op-fit"><b>מתאים במיוחד ל:</b> צוותים עם SDR משלהם שרוצים להתמקד בשיחות ולהשאיר לנו את התשתית.</p>
+          <button type="button" class="btn btn-ink" data-book data-route="Done With You">קבעו שיחה</button>
+        </div>
+        <ul class="op-list">
+          <li>תשתית אאוטריץ', הקמה וניהול שוטף</li>
+          <li>אסטרטגיה ותוכן סביב ה-ICP שלכם</li>
+          <li>רשימות לידים מאומתות</li>
+          <li>התראות על לידים בזמן אמת</li>
+          <li>תבניות מענה לכל תרחיש</li>
+          <li>חיבור ל-CRM: הלידים נכנסים ישר למערכת שלכם</li>
+        </ul>
+      </div>
+      <div class="offer-panel" role="tabpanel" id="panel-inf" aria-labelledby="tab-inf" tabindex="0" hidden>
+        <div class="op-main">
+          <p class="op-lead">דומיין משני ייעודי, 100 תיבות מחוממות, ניהול שוטף ומעקב אחרי הגעה לתיבה. מערכת שליחה מוכנה לעבודה, עד 10,000 מיילים בחודש.</p>
+          <p class="op-fit"><b>מתאים במיוחד ל:</b> צוותים עם SDR ותוכן מוכן שחסרה להם תשתית שליחה יציבה.</p>
+          <button type="button" class="btn btn-ink" data-book data-route="Infrastructure">קבעו שיחה</button>
+        </div>
+        <ul class="op-list">
+          <li>דומיין משני ייעודי</li>
+          <li>100 תיבות, מחוממות לגמרי</li>
+          <li>עד 10,000 מיילים בחודש</li>
+          <li>ניהול תשתית שוטף</li>
+          <li>ניטור רציף של הגעה לתיבה</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section class="strategy" id="strategy" aria-labelledby="strategy-h">
+  <div class="wrap strategy-grid">
+    <div class="strategy-copy">
+      <h2 class="display" id="strategy-h">עוד לא בשלים <span class="acc">לשיחה</span>?</h2>
+      <p class="sub">מלאו פרטים ונשלח לכם אסטרטגיית אאוטריץ' מותאמת, ישר למייל ותוך שעה: ה-ICP שלכם, הערוצים שמתאימים, דוגמאות למסרים וטעויות שכדאי להימנע מהן.</p>
+      <ol class="chapters">
+        <li><b>שער</b><span>פרופיל החברה שלכם ומקבלי ההחלטות</span></li>
+        <li><b>התוכנית</b><span>גישת האאוטריץ' שלכם, ב-5 שלבים</span></li>
+        <li><b>המערכת</b><span>הכלים שעליהם נבנה את זה</span></li>
+        <li><b>מסר לדוגמה</b><span>נכתב במיוחד ל-ICP שלכם</span></li>
+        <li><b>מהמורות</b><span>טעויות נפוצות והצעד הבא שלכם</span></li>
+      </ol>
+    </div>
+    <form class="form strategy-form" id="strategyForm" method="post" action="#" novalidate data-endpoint-key="strategyEndpoint">
+      <div class="field">
+        <label for="s-site">אתר החברה</label>
+        <input id="s-site" name="website" type="url" inputmode="url" autocomplete="url" dir="ltr" required placeholder="yourcompany.co.il">
+      </div>
+      <div class="field">
+        <label for="s-email">אימייל בעבודה</label>
+        <input id="s-email" name="email" type="email" autocomplete="email" dir="ltr" required>
+      </div>
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span>אני מאשר/ת ומסכים/ה כי המידע שמסרתי ייאסף, יישמר ויעובד בהתאם לחוק הגנת הפרטיות, התשמ״א–1981 (לרבות תיקון 13), ולמטרות המפורטות במדיניות הפרטיות של האתר. ידוע לי שמסירת המידע נעשית מרצוני החופשי.</span>
+      </label>
+      <button type="submit" class="btn btn-ink btn-block">שלחו לי את האסטרטגיה</button>
+      <p class="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <h2 class="display" id="faq-h">שאלות <span class="acc">ותשובות</span>.</h2>
+    <div class="faq-list">
+      <details name="faq"><summary>מה מקבלים באסטרטגיה החינמית?</summary><p>מסמך אסטרטגיה של 5 עמודים, מותאם לעסק שלכם: ICP, ערוצים, מסרים ומהמורות. חינם, אצלכם במייל תוך שעה.</p></details>
+      <details name="faq"><summary>יש התחייבות?</summary><p>אין. אפשר לעזוב בכל רגע. רוב הלקוחות נשארים, כי אאוטריץ' מצטבר חודש אחרי חודש.</p></details>
+      <details name="faq"><summary>תוך כמה זמן רואים תוצאות?</summary><p>רוב הלקוחות רואים לידים ופגישות כבר בחודש-חודשיים הראשונים מתחילת הקמפיין.</p></details>
+      <details name="faq"><summary>מה ההבדל בין DFY ל-DWY?</summary><p>ב-Done For You אנחנו מריצים את כל האאוטריץ' מקצה לקצה, עד פגישות ביומן. מתאים למייסדים ולצוותים רזים. ב-Done With You אנחנו בונים אצלכם את התשתית והאסטרטגיה, ומכשירים את צוות ה-SDR שלכם להריץ אותה לבד.</p></details>
+      <details name="faq"><summary>יש לנו כבר אנשי מכירות. זה עדיין מתאים?</summary><p>מצוין. הם צריכים לסגור עסקאות, ואנחנו נדאג שיהיה להם מה לסגור. ב-DFY אנחנו מזינים להם זרם קבוע של פגישות. אם אתם מעדיפים שהצוות יריץ את האאוטריץ' בעצמו, זה DWY. בשיחה נכוון אתכם.</p></details>
+      <details name="faq"><summary>כמה זה עולה?</summary><p>התמחור תלוי בערוצים, בנפח ובמטרות. בשיחה תקבלו מספר ברור, בלי עלויות נסתרות.</p></details>
+      <details name="faq"><summary>במה אתם שונים מסוכנויות אחרות?</summary><p>רוב סוכנויות האאוטריץ' הן בעצם משרדי שיווק. אנחנו בנויים על טכנולוגיה שפיתחנו בעצמנו: דאטה שמאומתת ב-AI, קמפיינים בכמה ערוצים במקביל, CRM פנימי שמסתנכרן ל-CRM שלכם, ומענה תוך פחות מ-30 דקות. אנחנו לא מריצים קמפיינים. אנחנו בונים מערכת.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section class="close" id="close" aria-labelledby="close-h">
+  <div class="close-ground" aria-hidden="true"></div>
+  <div class="wrap close-grid">
+    <div class="anchor anchor-close" data-anchor="close" data-pose="2 20 0" data-ground="dark" aria-hidden="true"></div>
+    <div class="close-copy">
+      <h2 class="display" id="close-h">בואו נמלא לכם את <span class="acc">היומן</span>.</h2>
+      <p class="sub">30 דקות של שיחת אפיון: ה-ICP, הערוצים, ומה סביר לצפות לראות. בלי לחץ ובלי התחייבות.</p>
+      <button type="button" class="btn btn-cyan" data-book>קבעו שיחה</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="../../assets/logo-white.png" alt="LeadBound" width="1116" height="185" loading="lazy">
+      <p>LeadBound © 2026</p>
+    </div>
+    <nav class="foot-nav" aria-label="שירותים">
+      <ul>
+        <li><a href="https://the-leadbound.com/he/services/email">אאוטריץ' במייל</a></li>
+        <li><a href="https://the-leadbound.com/he/services/linkedin">אאוטריץ' בלינקדאין</a></li>
+        <li><a href="https://the-leadbound.com/he/services/infrastructure">תשתית שליחה</a></li>
+        <li><a href="https://the-leadbound.com/he/case-studies">סיפורי הצלחה</a></li>
+        <li><a href="https://the-leadbound.com/he/playbooks">מדריכים</a></li>
+      </ul>
+    </nav>
+    <nav class="foot-nav" aria-label="קישורים">
+      <ul>
+        <li><a href="https://the-leadbound.com/he/privacy">מדיניות פרטיות</a></li>
+        <li><a href="https://www.linkedin.com/company/the-leadbound/" rel="noopener" target="_blank">LinkedIn</a></li>
+        <li><a href="https://the-leadbound.com/" lang="en" hreflang="en">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<!-- BOOKING DIALOG -->
+<dialog class="book" id="book" aria-labelledby="book-h">
+  <form class="form book-form" id="bookForm" method="post" action="#" novalidate data-endpoint-key="bookingEndpoint">
+    <div class="book-head">
+      <div>
+        <h2 id="book-h">קביעת שיחה</h2>
+        <p>בואו נראה איך נמלא לכם את היומן</p>
+      </div>
+      <button type="button" class="x" data-close aria-label="סגירה"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="book-fields">
+      <div class="field"><label for="b-name">שם מלא</label><input id="b-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="b-email">אימייל בעבודה</label><input id="b-email" name="email" type="email" autocomplete="email" dir="ltr" required></div>
+      <div class="field"><label for="b-phone">טלפון</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" dir="ltr" required></div>
+      <div class="field"><label for="b-company">חברה</label><input id="b-company" name="company" autocomplete="organization" required></div>
+      <div class="field"><label for="b-site">אתר החברה</label><input id="b-site" name="website" type="url" inputmode="url" autocomplete="url" dir="ltr" required placeholder="yourcompany.co.il"></div>
+      <div class="field"><label for="b-route">מסלול</label>
+        <select id="b-route" name="route" required>
+          <option value="" disabled selected>בחרו מסלול</option>
+          <option value="Done For You" lang="en">Done For You</option>
+          <option value="Done With You" lang="en">Done With You</option>
+          <option value="Infrastructure" lang="en">Infrastructure</option>
+          <option value="עוד לא יודעים">עוד לא יודעים</option>
+        </select>
+      </div>
+    </div>
+    <label class="consent">
+      <input type="checkbox" name="consent" required>
+      <span>אני מאשר/ת ומסכים/ה כי המידע שמסרתי ייאסף, יישמר ויעובד בהתאם לחוק הגנת הפרטיות, התשמ״א–1981 (לרבות תיקון 13), ולמטרות המפורטות במדיניות הפרטיות של האתר. ידוע לי שמסירת המידע נעשית מרצוני החופשי.</span>
+    </label>
+    <button type="submit" class="btn btn-ink btn-block">שלחו</button>
+    <p class="status" role="status" aria-live="polite"></p>
+  </form>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
